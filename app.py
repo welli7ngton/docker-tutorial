@@ -24,4 +24,9 @@ def get_hit_count():
 @app.route('/')
 def hello():
     count = get_hit_count()
-    return f'Hello world! I have been seen {count} times aaaaaaanbbbbbb' + "<style>body{background-color:yellow}<style/>"
+
+    _msg = f"Hello world! I have been seen {count} times aaaaaaanbbbbbb"
+
+    _css = "<style>body{background-color:yellow}<style/>"
+
+    return _msg + _css
